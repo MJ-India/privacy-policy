@@ -1,14 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - MeJuvante</title>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – MeJuvante</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for MeJuvante applications used to automate official LinkedIn Page posts." />
+  <meta property="og:title" content="Privacy Policy – MeJuvante" />
+  <meta property="og:description" content="How we handle data for our internal posting automation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <style>
+    /* ===== Brand ===== */
+    :root{
+      --brand-navy: #1e3c61;   /* primary */
+      --brand-cyan: #61c4ca;   /* accent */
+      --brand-blue: #2c99b7;   /* secondary */
+      --ink: #1a1a1a;
+      --muted: #5f6b7a;
+      --bg: #f7fafc;
+      --card: #ffffff;
+      --ring: rgba(30,60,97,0.18);
+    }
+
+    /* ===== Reset (minimal) ===== */
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); }
+
+    /* ===== Header ===== */
+    .topbar{
+      background: linear-gradient(135deg, var(--brand-navy), var(--brand-blue));
+      color: #fff;
+      padding: 28px 20px;
+    }
+    .brand{
+      max-width: 1080px; margin: 0 auto; display: flex; align-items: center; gap: 16px;
+    }
+    .brand img{
+      width: 44px; height: 44px; object-fit: contain; display: block; filter: drop-shadow(0 2px 6px rgba(0,0,0,.15));
+      background: #fff; border-radius: 10px; padding: 6px;
+    }
+    .brand h1{
+      font-size: 20px; font-weight: 700; margin: 0; letter-spacing: .2px;
+    }
+    .brand small{ display:block; opacity:.9; font-weight:500; }
+
+    /* ===== Card ===== */
+    .container{ max-width: 920px; margin: 24px auto 48px; padding: 0 16px; }
+    .card{
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px var(--ring);
+      border: 1px solid rgba(30,60,97,0.08);
+    }
+    h2{ margin: 0 0 14px; font-size: 22px; color: var(--brand-navy); }
+    p{ line-height: 1.65; color: var(--ink); margin: 0 0 14px; }
+    ul{ margin: 0 0 16px 18px; line-height: 1.6; }
+    .muted{ color: var(--muted); }
+    .callout{
+      background: linear-gradient(0deg, rgba(97,196,202,.10), rgba(97,196,202,.10));
+      border-left: 4px solid var(--brand-cyan);
+      padding: 12px 14px;
+      border-radius: 12px;
+      margin: 12px 0 18px;
+    }
+
+    /* ===== Footer ===== */
+    footer{
+      margin: 24px auto 48px; text-align: center; color: var(--muted);
+    }
+    a{ color: var(--brand-blue); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 520px){
+      .brand h1{ font-size: 18px; }
+      .card{ padding: 22px; border-radius: 14px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>This application is built and maintained by MeJuvante Private Limited.</p>
-  <p>We do not collect or share personal data outside of what is required to post on our official LinkedIn Page.</p>
-  <p>For any concerns, please contact us at <a href="mailto:mj_collaboration@mejuvante.com">info@mejuvante.com</a>.</p>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="brand">
+      <!-- Replace with your exported logo file -->
+      <img src="assets/logo.png" alt="MeJuvante logo" />
+      <div>
+        <h1>MeJuvante Private Limited <small>Privacy Policy</small></h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="container">
+    <section class="card">
+      <div class="callout">
+        <strong>Scope.</strong> This policy applies to our internal application that automates posts to the official MeJuvante LinkedIn Company Page.
+      </div>
+
+      <h2>1) Who we are</h2>
+      <p><strong>MeJuvante Private Limited</strong> (“we”, “us”) operates internal tools to streamline publishing to our official LinkedIn Page.</p>
+
+      <h2>2) What data we collect</h2>
+      <p>We do <strong>not</strong> collect personal data from public users through this page or application. The tool is used by authorized staff only.</p>
+
+      <h2>3) How we use LinkedIn</h2>
+      <ul>
+        <li>Create and publish posts on behalf of our Company Page.</li>
+        <li>Store post content, media, and scheduling metadata needed for publishing.</li>
+        <li>No selling or sharing of personal data.</li>
+      </ul>
+
+      <h2>4) Third-party services</h2>
+      <p>Publishing uses LinkedIn’s APIs and infrastructure. Your use of LinkedIn is also governed by LinkedIn’s own policies.</p>
+
+      <h2>5) Security</h2>
+      <p>Access is limited to authorized employees. Credentials are stored securely and rotated when necessary.</p>
+
+      <h2>6) Contact</h2>
+      <p>Questions or requests: <a href="mailto:mj_collaboration@mejuvante.com">mj_collaboration@mejuvante.com</a></p>
+
+      <p class="muted">Last updated: <script>document.write(new Date().toLocaleDateString())</script></p>
+    </section>
+
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> MeJuvante Private Limited
+    </footer>
+  </main>
 </body>
 </html>
 
